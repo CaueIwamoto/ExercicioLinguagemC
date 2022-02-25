@@ -1,4 +1,4 @@
-//Exercícios em C 2022 - Exercício laboratório de algoritmo 14/02/2022
+//Exercícios em C 2022 - Exercício laboratório de algoritmo - Semana 1 - 14/02/2022
 
 //Alguns "importações" (similares do Python) importantes:
 #include <stdio.h>
