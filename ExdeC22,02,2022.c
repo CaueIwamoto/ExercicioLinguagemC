@@ -130,6 +130,8 @@ int main(){
     else
         printf("N");
     
+    return 0;
+    
 }
 
 //Exercício 5 OBS: eu apenas copiei e colei o código do exercício 4, e o moodle considerou como correto (não sei pq haha)
@@ -147,6 +149,8 @@ int main(){
     
     else
         printf("N");
+    
+    return 0;
     
 }
 
@@ -172,6 +176,37 @@ int main()
 } 
 
 //Exercício 7
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int num, sequencia;
+    int sequencia1 = 0;
+    int sequencia2 = 1;
+    
+    scanf("%d", &num);
+    
+    if(num == 1){
+        sequencia = 0;
+    }
+    else if(num == 2){
+        sequencia = 1;
+    }
+    else{
+        for(int n = 3; n<=num; n++){
+            sequencia = sequencia1 + sequencia2;
+            if(n%2 == 0){
+                sequencia2 = sequencia;
+            }
+            else{
+                sequencia1 = sequencia;
+            }
+        }
+    }
+    printf("%d", sequencia);
+    
+    return 0;
+}
 
 //Exercício 8
 #include <stdio.h>
@@ -189,6 +224,7 @@ int main(){
     }
     printf("%d", numinvertido);
     
+    return 0;
 }
 
 //Exercício 9
@@ -209,4 +245,6 @@ int main() {
         }
     }
     printf("MDC = %d", MDC);
+    
+    return 0;
 }
