@@ -111,3 +111,21 @@ int main(){
 }
 
 //Exercício 9
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int nummaximo, numminimo, MDC;
+    
+    scanf("%d", &nummaximo);
+    scanf("%d", &numminimo);
+    
+    MDC = 0;
+    
+    for (int i = 1; i <= nummaximo; i++){
+        if (nummaximo % i == 0 && numminimo % i == 0){
+            MDC = i;
+        }
+    }
+    printf("MDC = %d", MDC);
+}
