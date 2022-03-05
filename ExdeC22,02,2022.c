@@ -51,6 +51,68 @@ int main()
 }
 
 //Exercício 3
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() {
+  int n1, n2, n3, n4;
+  scanf("%d", &n1);
+  scanf("%d", &n2);
+  scanf("%d", &n3);
+  scanf("%d", &n4);
+  if (n1 < n2 && n2 < n3 && n3 < n4)
+    printf("%d %d %d %d", n1, n2, n3, n4);
+  else if (n1 < n3 && n3 < n2 && n2 < n4)
+    printf("%d %d %d %d", n1, n3, n2, n4);
+  else if (n1 < n3 && n3 < n4 && n4 < n2)
+    printf("%d %d %d %d", n1, n3, n4, n2);
+  else if (n1 < n2 && n2 < n4 && n4 < n3)
+    printf("%d %d %d %d", n1, n2, n4, n3);
+  else if (n1 < n4 && n4 < n2 && n2 < n3)
+    printf("%d %d %d %d", n1, n4, n2, n3);
+  else if (n1 < n4 && n4 < n3 && n3 < n2)
+    printf("%d %d %d %d", n1, n4, n3, n2);
+
+  else if (n2 < n1 && n1 < n3 && n3 < n4)
+    printf("%d %d %d %d", n2, n1, n3, n4);
+  else if (n2 < n1 && n1 < n4 && n4 < n3)
+    printf("%d %d %d %d", n2, n1, n4, n3);
+  else if (n2 < n3 && n3 < n1 && n1 < n4)
+    printf("%d %d %d %d", n2, n3, n1, n4);
+  else if (n2 < n3 && n3 < n4 && n4 < n1)
+    printf("%d %d %d %d", n2, n3, n4, n1);
+  else if (n2 < n4 && n4 < n1 && n1 < n3)
+    printf("%d %d %d %d", n2, n4, n1, n3);
+  else if (n2 < n4 && n4 < n3 && n3 < n1)
+    printf("%d %d %d %d", n2, n4, n3, n1);
+
+  else if (n3 < n1 && n1 < n2 && n2 < n4)
+    printf("%d %d %d %d", n3, n1, n2, n4);
+  else if (n3 < n1 && n1 < n4 && n4 < n2)
+    printf("%d %d %d %d", n3, n1, n4, n2);
+  else if (n3 < n2 && n2 < n1 && n1 < n4)
+    printf("%d %d %d %d", n3, n2, n1, n4);
+  else if (n3 < n2 && n2 < n4 && n4 < n1)
+    printf("%d %d %d %d", n3, n2, n4, n1);
+  else if (n3 < n4 && n4 < n1 && n1 < n2)
+    printf("%d %d %d %d", n3, n4, n1, n2);
+  else if (n3 < n4 && n4 < n2 && n2 < n1)
+    printf("%d %d %d %d", n3, n4, n2, n1);
+
+  else if (n4 < n1 && n1 < n2 && n2 < n3)
+    printf("%d %d %d %d", n4, n1, n2, n3);
+  else if (n4 < n1 && n1 < n3 && n3 < n2)
+    printf("%d %d %d %d", n4, n1, n3, n2);
+  else if (n4 < n2 && n2 < n1 && n1 < n3)
+    printf("%d %d %d %d", n4, n2, n1, n3);
+  else if (n4 < n2 && n2 < n3 && n3 < n1)
+    printf("%d %d %d %d", n4, n2, n3, n1);
+  else if (n4 < n3 && n3 < n2 && n2 < n1)
+    printf("%d %d %d %d", n4, n3, n2, n1);
+  else if (n4 < n3 && n3 < n1 && n1 < n2)
+    printf("%d %d %d %d", n4, n3, n1, n2);
+} 
 
 //Exercício 4
 #include <stdio.h>
@@ -89,6 +151,25 @@ int main(){
 }
 
 //Exercício 6
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int a, b, c;
+
+  scanf("%d%d%d", &a, &b, &c);
+
+  for (int i = 1; i < c; i++)
+  {
+    if (((i * a) >= b) && ((i * a) <= c))
+    {
+      printf("%d ", i * a);
+    }
+  }
+
+  return 0;
+} 
 
 //Exercício 7
 
