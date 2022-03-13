@@ -291,3 +291,44 @@ int main(){
 }
 
 //Exercício 12
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    
+    int numPontos;
+    float somaX = 0, somaY = 0;
+    float alfa = 0, beta = 0,sxy = 0, sxx = 0,syy = 0, y, x, mediaX, mediaY, r;
+    
+    printf("Digite o numero de pontos:\n");
+    scanf("%d", &numPontos);
+    
+    for (int i = 0; i < numPontos; i++){
+        printf("Digite o valor da variavel x:\n");
+        scanf("%f", &x);
+        somaX+=x;
+        printf("Digite o valor da variavel y:\n");
+        scanf("%f", &y);
+        somaY+=y;
+        sxy += (x*y);
+        sxx += (x*x);
+        syy += (y*y);
+    }
+    
+    mediaX = somaX/numPontos;
+    mediaY = somaY/numPontos;
+    sxy -= (somaX*somaY);
+    sxx -= (numPontos*(mediaX*mediaX));
+    syy -= (numPontos*(mediaY*mediaY));
+    beta = sxy/sxx;
+    alfa = mediaY - (beta*mediaX);
+    r = (sxy/sqrt(sxx*syy));
+    
+    printf("Equacao do Modelo: y = %.6f*x + (%.6f)\n", beta, alfa);
+    printf("Coeficiente de correlacao: %.6f\n", r);
+    
+    printf("Digite o valor a ser estimado:\n");
+    scanf("%f", &x);
+    y = x*beta + alfa;
+    printf("Estimativa para x = %.6f eh y= %.6f",x,y);
+}
