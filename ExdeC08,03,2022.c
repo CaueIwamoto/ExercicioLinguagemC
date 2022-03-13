@@ -22,10 +22,122 @@ int main() {
 }
 
 //Exercício 2
+/* Esse primeiro código comentado tá quase certo, apenas estou errando no cálculo:
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x1, y1;
+    float x2, y2;
+    
+    printf("Digite as coordenadas do 1o. ponto:\n");
+    scanf("%f %f", &x1, &y1);
+    
+    printf("Digite as coordenadas do 2o. ponto:\n");
+    scanf("%f %f", &x2, &y2);
+    
+    printf("Distancia entre os dois pontos: ");
+    
+    printf("%f",(sqrt(pow(x1-x2, 2) + pow (y1-y2, 2))));
+    
+    return 0;
+}
+*/
+
+/* Esse código está certo, porém diferente do meu código anterior: */
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float dist3(float, float, float, float, float, float);
+
+int main(){
+  float a, b, c, d, e, f;
+  printf("Digite as coordenadas do 1o. ponto:\n");
+  scanf("%f",&a);
+  scanf("%f",&b);
+  scanf("%f",&c);
+  printf("Digite as coordenadas do 2o. ponto:\n");
+  scanf("%f",&d);
+  scanf("%f",&e);
+  scanf("%f",&f);
+  printf("Distancia entre os dois pontos: %f", dist3(a, b, c, d, e, f));
+}
+
+float dist3(float a, float b, float c, float d, float e, float f){
+  float x;
+  x=sqrt(((a-d)*(a-d))+((b-e)*(b-e))+((c-f)*(c-f)));
+  
+  return x;
+}
 
 //Exercício 3
+/* Esse primeiro código comentado tá quase certo, apenas estou errando no cálculo:
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+   
+int main(int argc, char *argv[]){
+  float x1, y1, x2, y2;
+  float produto_escalar; 
+       
+  printf("Digite as coordenadas do 1o vetor:\n");
+  scanf("%f %f", &x1, &y1);
+     
+  printf("Digite as coordenadas do 2o vetor:\n");
+  scanf("%f %f", &x2, &y2);
+     
+  produto_escalar = (x2 * y1) + (y1 * x2);
+  printf("Produto Escalar: %f", produto_escalar);
+  
+  return 0;
+}
+*/
+
+
+/* Esse código está certo, porém diferente do meu código anterior: */
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float prodEsc(float, float, float, float, float, float);
+
+int main(){
+  float a, b, c, d, e, f;
+  printf("Digite as coordenadas do 1o vetor:\n");
+  scanf("%f",&a);
+  scanf("%f",&b);
+  scanf("%f",&c);
+  printf("Digite as coordenadas do 2o vetor:\n");
+  scanf("%f",&d);
+  scanf("%f",&e);
+  scanf("%f",&f);
+  printf("Produto Escalar: %f", prodEsc(a, b, c, d, e, f));
+}
+
+float prodEsc (float a, float b, float c, float d, float e, float f){
+  float x;
+  x=((a*d)+(b*e)+(c*f));
+  
+  return x;
+}
 
 //Exercício 4
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.1415926535
+
+int main(){
+  double a, x;
+  printf("Digite o angulo em graus:\n");
+  
+  scanf("%lf", &a);
+  x = cos(a*PI/180);
+  
+  printf("O cosseno de %lf graus eh %lf", a, x);
+
+}
 
 //Exercício 5
 #include <stdlib.h>
@@ -47,10 +159,58 @@ int main(){
 }
 
 //Exercício 6
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.1415926535
+
+int main(){
+  double a, x=0;
+  printf("Digite o angulo em radianos:\n");
+  
+  scanf("%lf", &a);
+  x = (a*180)/PI;
+  
+  printf("O angulo de %.6f radianos equivale a %.6f graus.",a, x); 
+}
 
 //Exercício 7
+#include <stdio.h>
+#include <math.h>
+
+
+int main(){
+    float a, b, c, d;
+    printf("Digite as coordenadas do vetor:\n");
+    
+    scanf("%f %f %f", &a, &b, &c);
+    d = sqrt((a*a)+(b*b)+(c*c));
+    
+    printf("Modulo do vetor: %f",d);
+}
 
 //Exercício 8
+#include <stdio.h>
+#include <math.h>
+#define PI 3.14159265359
+
+
+int main(){
+    float a, b, c, d, e, f, g, h, i, j, k, l, m;
+    printf("Digite as coordenadas do 1o vetor nao nulo:\n");
+    scanf("%f %f %f", &a, &b, &c);
+    printf("Digite as coordenadas do 2o vetor nao nulo:\n");
+    scanf("%f %f %f", &d, &e, &f);
+    g=(a*d)+(b*e)+(c*f);
+    h=sqrt((a*a)+(b*b)+(c*c));
+    i=sqrt((d*d)+(e*e)+(f*f));
+    k=h*i;
+    j=g/k;
+    l=acos(j);
+    m=l*180/PI;
+    
+    printf("Angulo entre os dois vetores: %f graus.",m);
+}
 
 //Exercício 9
 #include <stdlib.h>
