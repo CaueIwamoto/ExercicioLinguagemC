@@ -1,4 +1,32 @@
 //Exercício 1
+#include <stdio.h>
+
+double media(double[], int);
+
+int main(){
+  int a;
+  
+  scanf("%d", &a);
+  double v[a];
+  for (int i=0; i< a; i++){
+    scanf("%lf", &v[i]);
+    }
+  printf("%.2lf", media(v, a));
+  
+}
+
+double media(double v[], int a){
+  double soma=0;
+  double media;
+  
+  for (int i=0; i<a; i++){
+    soma+= v[i];
+  }
+  
+  media = soma/a;
+  
+  return media;
+}
 
 //Exercício 2
 
