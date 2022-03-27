@@ -120,10 +120,8 @@ int main() {
     int lia,coa,lib,cob;
     printf("Tamanho da matriz A:\n");
     scanf("%d %d", &lia ,&coa);
-    
     printf("Tamanho da matriz B:\n");
     scanf("%d %d", &lib ,&cob);
-    
     double ma[lia][coa];
     double mb[lib][cob];
     double mr[lia][cob];
