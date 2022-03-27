@@ -1,3 +1,5 @@
+//Exercício laboratório algoritmos - 15/03/2022
+
 //Exercício 1
 #include <stdio.h>
 
