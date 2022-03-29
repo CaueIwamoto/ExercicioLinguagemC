@@ -1,13 +1,13 @@
 //Exercício laboratório algoritmo - 29/03/2022
 
-//Exercício 
+//Exercício 1:
 
-//Exercício 
 
-//Exercício 
+//Exercício 2:
 
-//Exercício 
 
-//Exercício 
+//Exercício 3:
 
-//Exercício 
+
+//Exercício 4:
+
