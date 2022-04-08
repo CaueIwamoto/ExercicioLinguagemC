@@ -1,3 +1,4 @@
+//Primeiro exercício de ponteiros laboratório do dia 29/03/2022
 //Exercício laboratório algoritmo - 29/03/2022
 
 //Exercício 1:
