@@ -67,7 +67,40 @@ int main(){
 }
 
 //Exercício 4
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 
+int main(){
+double u, v = 0, w = 0;
+double x[3],  y[3], z[3];
+int i = 0;
+double valor = 0;
+FILE *fr = fopen("prodMistoR.txt","r");
+
+while(1){
+if(feof(fr)) {
+        break;
+    } 
+
+
+fscanf(fr, "%lf %lf %lf", &u, &v, &w);
+if(i<3){
+x[i] = u; 
+y[i] = v; 
+z[i] = w; 
+i += 1;
+}
+}
+
+valor = x[0]*y[1]*z[2]+x[1]*y[2]*z[0]+x[2]*y[0]*z[1]-x[2]*y[1]*z[0]-x[1]*y[0]*z[2]-x[0]*y[2]*z[1];
+printf("x = (%.4f, %.4f, %.4f)\n", x[0], x[1], x[2]);
+printf("y = (%.4f, %.4f, %.4f)\n", y[0], y[1], y[2]);
+printf("z = (%.4f, %.4f, %.4f)\n", z[0], z[1], z[2]);
+printf("Volume: %.4f\n", valor);
+
+}
 
 //Exercício 5
 #include <stdio.h>
