@@ -1,4 +1,4 @@
-//Exercício laboratório no moodle do dia 26/04/2022
+//Exercício laboratório de algoritmo no moodle do dia 26/04/2022
 
 //Exercício 1
 #include <stdio.h>
