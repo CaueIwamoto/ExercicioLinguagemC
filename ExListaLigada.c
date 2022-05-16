@@ -1,3 +1,6 @@
+//Exercícios de laboratório no moodle de algoritmo - 10/05/2022
+
+
 //Exercício 1
 #include <stdio.h>
 #include <stdlib.h>
